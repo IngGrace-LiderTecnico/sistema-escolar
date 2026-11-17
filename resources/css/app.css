@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+@source '../**/*.vue';
+@theme {
+    --color-brand: #184c57;
+    --color-canvas: #f2f5f4;
+    --color-surface: #ffffff;
+    --color-ink: #172c33;
+    --color-muted: #52666e;
+    --color-line: #d5e0df;
+    --color-danger: #b42318;
+    --font-sans: 'Segoe UI', system-ui, sans-serif;
+}
+body { @apply bg-canvas text-ink antialiased; }
+input, select { @apply w-full rounded-lg border border-line bg-surface px-3 py-2; }
+button, a, input, select { @apply focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand; }
